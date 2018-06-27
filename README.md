@@ -18,7 +18,7 @@ Currently it supports the following operating systems:
 * RHEL/CentOS/Fedora Linux on a variety of platforms (ppc64 ppc64le i686 x86_64)
 * Mac OS X 10.9+
 * FreeBSD 9, 10
-* Windows 2012R2
+* Windows 2012R2 / 2016
 
 Why?
 ----
