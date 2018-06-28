@@ -39,6 +39,9 @@ dependency "ruby"
 dependency "rubygems"
 dependency "bundler"
 
+# chef tools 
+dependency "chef"
+
 if linux? || mac_os_x?
   dependency "berkshelf" unless i386? || ios_xr? || nexus? || armhf?
 end

@@ -15,9 +15,9 @@
 #
 
 name "omnibus-toolchain"
-friendly_name "Omnibus Toolchain"
-maintainer "Chef Software Inc"
-homepage   "https://www.chef.io"
+friendly_name "AeroBase Toolchain"
+maintainer "Aerobase Software Inc"
+homepage   "https://aerobase.io"
 license "Apache-2.0"
 license_file "LICENSE"
 
@@ -66,7 +66,7 @@ end
 proj_to_work_around_cleanroom = self
 package :pkg do
   identifier "com.getchef.pkg.#{proj_to_work_around_cleanroom.name}"
-  signing_identity "Developer ID Installer: Chef Software, Inc. (EU3VF8YLX2)"
+  #signing_identity "Developer ID Installer: Chef Software, Inc. (EU3VF8YLX2)"
 end
 compress :dmg
 
@@ -77,10 +77,10 @@ package :msi do
   upgrade_code msi_upgrade_code
   wix_candle_extension "WixUtilExtension"
   wix_light_extension "WixUtilExtension"
-  signing_identity "AF21BA8C9E50AE20DA9907B6E2D4B0CC3306CA03", machine_store: true
+  #signing_identity "5935fa66aa9f1c3f5b41092adcd75619dd51c918", machine_store: true
   parameters ProjectLocationDir: project_location_dir
 end
 
 package :appx do
-  signing_identity "AF21BA8C9E50AE20DA9907B6E2D4B0CC3306CA03", machine_store: true
+  #signing_identity "‎5935fa66aa9f1c3f5b41092adcd75619dd51c918", machine_store: true
 end
