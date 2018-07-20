@@ -23,6 +23,12 @@ Update windows Path, add C:\Ruby25-x64\msys64\usr\bin;C:\Ruby25-x64\msys64\mingw
 ```
 * Assuming C:\Ruby25-x64 was selected during your ruby installation.
 
+Known Issues 
+---------------
+Build failed with error:  tar (child): Cannot connect to C: resolve failed
+Open C:/Ruby25-x64/lib/ruby/gems/2.5.0/bundler/gems/omnibus-7d00d32d4186/lib/omnibus/fetchers/net_fetcher.rb line 239
+and force seven_zip extract (change condition from != to ==)
+
 Install bundler
 ---------------
 
