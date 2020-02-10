@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'omnibus',          git: 'https://github.com/chef/omnibus'
+gem 'omnibus',          git: 'https://github.com/chef/omnibus.git', tag: '7.0.2'
 gem 'omnibus-software', git: 'https://github.com/chef/omnibus-software'
 gem 'artifactory'
 

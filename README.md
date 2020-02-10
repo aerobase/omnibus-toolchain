@@ -78,6 +78,10 @@ Full help for the Omnibus command line interface can be accessed with the
 $ bundle exec omnibus help
 ```
 
+### Known issues
+When building on windows, 'tar (child): Cannot connect to C: resolve failed' will fail the build.
+Open ../omnibus/fetchers/net_fetcher.rb:246 and remove first part of if condition at extract method.
+
 Why so angry?
 -----
 

@@ -29,6 +29,12 @@ current_file ||= __FILE__
 version_file = File.expand_path("../../../VERSION", current_file)
 build_version IO.read(version_file).strip
 
+# In order to prevent unecessary cache expiration,
+# package and package version overrides, build_version
+# and build_iteration are kept in <project-root>/omnibus_overrides.rb
+overrides_path = File.expand_path("../../../omnibus_overrides.rb", __FILE__)
+instance_eval(IO.read(overrides_path), overrides_path)
+
 if windows?
   install_dir  "#{default_root}/opscode/#{name}"
   package_name "omnibus-toolchain"
